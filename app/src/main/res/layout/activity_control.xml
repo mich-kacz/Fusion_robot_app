@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context=".ControlActivity">
+
+    <VideoView
+        android:id="@+id/videoView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:id="@+id/table_gears"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_gravity="bottom|right"
+        android:visibility="visible">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="202dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/imageButton_plus"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_input_add" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/imageButton_minus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@android:drawable/button_onoff_indicator_on" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/table_arrows"
+        android:layout_width="230dp"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom|left"
+        android:visibility="visible">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/imageButton_up"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                app:srcCompat="@android:drawable/arrow_up_float" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton_left"
+                android:layout_width="115dp"
+                android:layout_height="50dp"
+                android:rotation="-90"
+                app:srcCompat="@android:drawable/arrow_up_float" />
+
+            <ImageButton
+                android:id="@+id/imageButton_right"
+                android:layout_width="115dp"
+                android:layout_height="50dp"
+                android:rotation="90"
+                app:srcCompat="@android:drawable/arrow_up_float" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/imageButton_down"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                app:srcCompat="@android:drawable/arrow_down_float" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <FrameLayout
+        android:id="@+id/table_options"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/imageButton_Back"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_gravity="right|top"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        <ImageButton
+            android:id="@+id/imageButton_EXIT"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_gravity="top|left"
+            app:srcCompat="@android:drawable/ic_lock_power_off" />
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</FrameLayout>
+
