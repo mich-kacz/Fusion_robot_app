@@ -5,6 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,60 +16,67 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="casual"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-condensed"
         android:text="AGV Robot Application"
         android:textAlignment="center"
         android:textColor="@color/orange"
         android:textSize="36sp"
         android:textStyle="bold" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="55dp" />
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="4"
         app:srcCompat="@drawable/fusion" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="58dp" />
-
-    <Button
-        android:id="@+id/button_connect"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/orange"
-        android:backgroundTint="@color/orange"
-        android:text="Connect"
-        android:textSize="18sp" />
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="16dp" />
+        <Button
+            android:id="@+id/button_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Connect"
+            android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/button_website"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/orange"
-        android:backgroundTint="@color/orange"
-        android:text="Website"
-        android:textSize="18sp" />
+        <Button
+            android:id="@+id/button_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Website"
+            android:textSize="18sp" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="16dp" />
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Exit"
+            android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/button_exit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/orange"
-        android:backgroundTint="@color/orange"
-        android:text="Exit"
-        android:textSize="18sp" />
+    </LinearLayout>
 
 </LinearLayout>

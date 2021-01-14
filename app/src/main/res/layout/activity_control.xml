@@ -11,91 +11,92 @@
         android:id="@+id/webview_stream"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center">
-
-    </WebView>
+        android:layout_gravity="center"></WebView>
 
     <TableLayout
         android:id="@+id/table_gears"
-        android:layout_width="200dp"
-        android:layout_height="130dp"
+        android:layout_width="60dp"
+        android:layout_height="120dp"
         android:layout_gravity="bottom|right"
-        android:visibility="visible">
+        android:layout_margin="16dp"
+        android:visibility="visible"
+        android:weightSum="2">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="202dp"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/imageButton_plus"
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                app:srcCompat="@android:drawable/ic_input_add" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
+        <ImageButton
+            android:id="@+id/imageButton_plus"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:gravity="center">
+            android:layout_weight="1"
+            android:alpha="0.75"
+            app:srcCompat="@android:drawable/ic_input_add" />
 
-            <ImageButton
-                android:id="@+id/imageButton_minus"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:srcCompat="@android:drawable/button_onoff_indicator_on" />
-        </TableRow>
+        <ImageButton
+            android:id="@+id/imageButton_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.75"
+            app:srcCompat="@android:drawable/button_onoff_indicator_on" />
+
     </TableLayout>
 
     <TableLayout
         android:id="@+id/table_arrows"
-        android:layout_width="230dp"
-        android:layout_height="150dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:layout_gravity="bottom|left"
+        android:layout_margin="16dp"
         android:visibility="visible">
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:gravity="center">
 
             <ImageButton
                 android:id="@+id/imageButton_up"
-                android:layout_width="80dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:alpha="0.75"
                 app:srcCompat="@android:drawable/arrow_up_float" />
         </TableRow>
 
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/imageButton_left"
-                android:layout_width="115dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:alpha="0.75"
                 android:rotation="-90"
                 app:srcCompat="@android:drawable/arrow_up_float" />
 
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
             <ImageButton
                 android:id="@+id/imageButton_right"
-                android:layout_width="115dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:alpha="0.75"
                 android:rotation="90"
                 app:srcCompat="@android:drawable/arrow_up_float" />
         </TableRow>
 
         <TableRow
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center">
 
             <ImageButton
                 android:id="@+id/imageButton_down"
-                android:layout_width="80dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:alpha="0.75"
                 app:srcCompat="@android:drawable/arrow_down_float" />
         </TableRow>
     </TableLayout>
@@ -105,6 +106,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right|top"
+        android:layout_margin="16dp"
+        android:alpha="0.75"
         app:srcCompat="@android:drawable/ic_dialog_dialer" />
 
     <FrameLayout
@@ -129,6 +132,7 @@
             android:layout_gravity="top|left"
             app:srcCompat="@android:drawable/ic_lock_power_off" />
     </FrameLayout>
+
 
 </FrameLayout>
 

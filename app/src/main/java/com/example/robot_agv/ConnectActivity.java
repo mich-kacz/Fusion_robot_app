@@ -1,7 +1,5 @@
 package com.example.robot_agv;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
