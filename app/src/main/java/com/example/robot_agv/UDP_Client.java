@@ -16,6 +16,14 @@ public class UDP_Client extends Thread
 
     DatagramSocket Client_socket;
 
+    public UDP_Client(String ip, String data, int port)
+    {
+        this.IP = ip;
+        this.data_to_send=data;
+        this.port=port;
+
+    }
+
     public UDP_Client(String ip, String data)
     {
         this.IP = ip;
@@ -37,7 +45,6 @@ public class UDP_Client extends Thread
 
 
         Client_socket.send(packet_data);
-        System.out.println("Wysłano");
     }
 
     public void run()
@@ -46,7 +53,7 @@ public class UDP_Client extends Thread
             Send_data(this.data_to_send);
             Client_socket.close();
         } catch (IOException e) {
-            System.out.println("Błąd");
+            System.out.println("Client Error");
             e.printStackTrace();
         }
     }

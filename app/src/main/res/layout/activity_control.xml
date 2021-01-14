@@ -2,15 +2,18 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context=".ControlActivity">
 
-    <VideoView
-        android:id="@+id/videoView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <WebView
+        android:id="@+id/webview_stream"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+    </WebView>
 
     <TableLayout
         android:id="@+id/table_gears"
@@ -126,13 +129,6 @@
             android:layout_gravity="top|left"
             app:srcCompat="@android:drawable/ic_lock_power_off" />
     </FrameLayout>
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center" />
 
 </FrameLayout>
 

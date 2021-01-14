@@ -1,2 +1,4 @@
 include ':app'
 rootProject.name = "Robot_agv"
+include ':openCVLibrary310'
+include ':openCVLibrary310'
